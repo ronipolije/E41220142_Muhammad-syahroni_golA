@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setup canvas</title>
+</head>
+<style>
+    #canvas {
+        border: 1px solid;
+        width: 100%;
+        height: 500px;
+    }
+</style>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+
+
+
+
+
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = canvas.scrollWidth;
+        canvas.height = canvas.scrollHeight;
+        ctx.font = "Bold 40px arial ,sans-serif";
+        ctx.fillStyle = "rgb(204,28,181)";
+        ctx.fillText("text di kanvas jfkjfkjk ", 100, 100);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "rgb(100,28,291)";
+        ctx.strokeText("text di kanvas jfkjfkjk ", 100, 100);
+
+    </script>
+</body>
+
+</html>
